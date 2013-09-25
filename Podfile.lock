@@ -1,0 +1,16 @@
+PODS:
+  - AeroGear (1.2.0):
+    - AFNetworking (= 1.3.1)
+  - AeroGear-OTP (1.0.0)
+  - AFNetworking (1.3.1)
+
+DEPENDENCIES:
+  - AeroGear (= 1.2.0)
+  - AeroGear-OTP (= 1.0.0)
+
+SPEC CHECKSUMS:
+  AeroGear: 12114a085ac8cdb7068449745f5386f41f0ca7c9
+  AeroGear-OTP: ba4bce69b15641f9ad428d57858c5debd112c673
+  AFNetworking: 9ec8aafb9269236a7630bd8d9838ce2ba30fa2a0
+
+COCOAPODS: 0.23.0

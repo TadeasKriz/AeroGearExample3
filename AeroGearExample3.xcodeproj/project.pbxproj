@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76E2FFE3012D4345AC7266B4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 355C6B03CBEB42D5AF372D27 /* libPods.a */; };
 		830FA06517F1F1CF0093BDAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830FA06417F1F1CF0093BDAE /* UIKit.framework */; };
 		830FA06717F1F1CF0093BDAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830FA06617F1F1CF0093BDAE /* Foundation.framework */; };
 		830FA06917F1F1CF0093BDAE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830FA06817F1F1CF0093BDAE /* CoreGraphics.framework */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		355C6B03CBEB42D5AF372D27 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		830FA06117F1F1CF0093BDAE /* AeroGearExample3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AeroGearExample3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		830FA06417F1F1CF0093BDAE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		830FA06617F1F1CF0093BDAE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,7 +53,7 @@
 		830FA07617F1F1CF0093BDAE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		830FA07817F1F1CF0093BDAE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		830FA07A17F1F1CF0093BDAE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		830FA07C17F1F1CF0093BDAE /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
+		830FA07C17F1F1CF0093BDAE /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		830FA07F17F1F1CF0093BDAE /* AGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AGViewController.h; path = Classes/Controllers/AGViewController.h; sourceTree = "<group>"; };
 		830FA08017F1F1CF0093BDAE /* AGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AGViewController.m; path = Classes/Controllers/AGViewController.m; sourceTree = "<group>"; };
 		830FA08317F1F1CF0093BDAE /* AeroGearExample3APIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AeroGearExample3APIClient.h; path = Classes/Service/AeroGearExample3APIClient.h; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		830FA09817F1F1CF0093BDAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		830FA09A17F1F1CF0093BDAE /* AeroGearExample3Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AeroGearExample3Tests.h; sourceTree = "<group>"; };
 		830FA09B17F1F1CF0093BDAE /* AeroGearExample3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AeroGearExample3Tests.m; sourceTree = "<group>"; };
+		E0472CB66BBA4BA1BECC2847 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,7 @@
 				830FA06517F1F1CF0093BDAE /* UIKit.framework in Frameworks */,
 				830FA06717F1F1CF0093BDAE /* Foundation.framework in Frameworks */,
 				830FA06917F1F1CF0093BDAE /* CoreGraphics.framework in Frameworks */,
+				76E2FFE3012D4345AC7266B4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +100,7 @@
 				830FA09417F1F1CF0093BDAE /* AeroGearExample3Tests */,
 				830FA06317F1F1CF0093BDAE /* Frameworks */,
 				830FA06217F1F1CF0093BDAE /* Products */,
+				E0472CB66BBA4BA1BECC2847 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +120,7 @@
 				830FA06617F1F1CF0093BDAE /* Foundation.framework */,
 				830FA06817F1F1CF0093BDAE /* CoreGraphics.framework */,
 				830FA08E17F1F1CF0093BDAE /* SenTestingKit.framework */,
+				355C6B03CBEB42D5AF372D27 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -191,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 830FA09F17F1F1CF0093BDAE /* Build configuration list for PBXNativeTarget "AeroGearExample3" */;
 			buildPhases = (
+				10FA34CCE90C40B4AB5A1D41 /* Check Pods Manifest.lock */,
 				830FA05D17F1F1CF0093BDAE /* Sources */,
 				830FA05E17F1F1CF0093BDAE /* Frameworks */,
 				830FA05F17F1F1CF0093BDAE /* Resources */,
+				C9E53F480AE34392BAA5A71B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -276,6 +284,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		10FA34CCE90C40B4AB5A1D41 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		830FA08B17F1F1CF0093BDAE /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,6 +311,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		C9E53F480AE34392BAA5A71B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -399,6 +437,7 @@
 		};
 		830FA0A017F1F1CF0093BDAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0472CB66BBA4BA1BECC2847 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroGearExample3/AeroGearExample3-Prefix.pch";
@@ -410,6 +449,7 @@
 		};
 		830FA0A117F1F1CF0093BDAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0472CB66BBA4BA1BECC2847 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AeroGearExample3/AeroGearExample3-Prefix.pch";
@@ -472,6 +512,7 @@
 				830FA0A117F1F1CF0093BDAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		830FA0A217F1F1CF0093BDAE /* Build configuration list for PBXNativeTarget "AeroGearExample3Tests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +521,7 @@
 				830FA0A417F1F1CF0093BDAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

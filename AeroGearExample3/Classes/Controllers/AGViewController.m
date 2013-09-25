@@ -7,7 +7,9 @@
 #import "AGViewController.h"
 #import "AeroGearExample3APIClient.h"
 
-@implementation AGViewController 
+@implementation AGViewController {
+    NSArray *_tasks;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -20,7 +22,7 @@
     // Note: here we use static strings but a login screen
     // will provide the necessary authentication details.
 
-    [apiClient loginWithUsername:@"<# Username #>" password:@"<# Password #>" success:^{
+    [apiClient loginWithUsername:@"john" password:@"123" success:^{
 
         // logged in successfully
 
@@ -29,6 +31,9 @@
             // do something with the response
             // e.g. updating the model
 
+            _tasks = responseObject;
+            
+            [self.tableView reloadData];
         } failure:^(NSError *error) {
             NSLog(@"An error has occured during read! \n%@", error);
         }];
@@ -45,16 +50,12 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView { 
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return [_tasks count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -64,6 +65,10 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
+    
+    NSUInteger row = [indexPath row];
+    
+    cell.textLabel.text = [[_tasks objectAtIndex:row] objectForKey:@"title"];
     
     return cell;
 }

@@ -6,7 +6,7 @@
 
 #import "AeroGearExample3APIClient.h"
 
-static NSString * const kAeroGearExample3APIBaseURLString = @"<# Service URL #>";
+static NSString * const kAeroGearExample3APIBaseURLString = @"http://todo-aerogear.rhcloud.com/todo-server";
 
 @implementation AeroGearExample3APIClient
 
@@ -51,7 +51,7 @@ static NSString * const kAeroGearExample3APIBaseURLString = @"<# Service URL #>"
             // created earlier, so every request can be properly
             // authenticated against the remote endpoints.
             _pipe = [pipeline pipe:^(id<AGPipeConfig> config) {
-                [config setName:@"<# Endpoint Name #>"]; 
+                [config setName:@"tasks"]; 
                 [config setAuthModule:authModule];
             }];
             // ..add your own pipes here
